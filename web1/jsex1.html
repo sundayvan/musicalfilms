@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>My Favourite Musical Movies</title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <hq>Comparison operator & Boolean</h1>
+    <h2>===</h2>
+    <h3>1===1</h3>
+    <script>
+      document.write(1 === 1);
+    </script>
+    <h3>1===2</h3>
+    <script>
+      document.write(1 === 2);
+    </script>
+
+    <h3>1&lt;2</h3>
+    <script>
+      document.write(1 < 2);
+    </script>
+
+    <h1>Conditional statements</h1>
+    <h2>Program</h2>
+    <script>
+      document.write("1<br>");
+      document.write("2<br>");
+      document.write("3<br>");
+      document.write("4<br>");
+    </script>
+
+    <h2>IF-true</h2>
+    <script>
+      document.write("1<br>");
+      if (true) {
+        document.write("2<br>");
+      } else {
+        document.write("3<br>");
+      }
+      document.write("4<br>");
+    </script>
+
+    <h2>IF-false</h2>
+    <script>
+      document.write("1<br>");
+      if (false) {
+        document.write("2<br>");
+      } else {
+        document.write("3<br>");
+      }
+      document.write("4<br>");
+    </script>
+
+
+    <h1><a href="index.html">My Favourite Musical Movies</a></h1>
+
+  <input id="night_day" type="button" value="night" onclick="
+  if(document.querySelector('#night_day').value === 'night')
+  {document.querySelector('body').style. backgroundColor='black';
+  document.querySelector('body').style. color='white';
+  document.querySelector('#night_day').value='day';
+}
+    else{
+      document.querySelector('body').style. backgroundColor='white';
+      document.querySelector('body').style. color='black';
+      document.querySelector('#night_day').value='night';
+    }
+">
+
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if(this.value === 'night'){
+  target.style. backgroundColor='black';
+  target.style. color='white';
+this.value='day';
+}
+  else{
+    target.style. backgroundColor='white';
+    target.style. color='black';
+    this.value='night';
+  }
+">
+<h1>Loop</h1>
+<ul>
+  <script>
+      document.write('<li>1</li>');
+      var i = 0;
+      while(i < 3){
+        document.write('<li>2</li>');
+        document.write('<li>3</li>');
+        i = i + 1;
+      }
+            document.write('<li>4</li>');
+  </script>
+</ul>
+
+<h1>Loop & Array</h1>
+<script>
+    var coworkers = ['hana','dosik','wniewfn','samsik','neoy'];
+</script>
+<h2>Co workers</h2>
+<ul>
+  <script>
+    var i = 0;
+    while(i < coworkers.length){
+      document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+      i = i + 1;
+    }
+  </script>
+</ul>
+
+    <ol>
+      <li><a href="1.html">Chicago</a></li>
+      <li><a href="2.html">Moulin Rouge!</a></li>
+      <li><a href="3.html">The Rocky Horror Picture Show</a></li>
+    </ol>
+
+    <h2 style="color:powderblue; background-color:coral">The Rocky Horror Picture Show</h2>
+    <strong>The Rocky Horror Picture Show</strong> is a 1975 British-American <a href="https://en.wikipedia.org/wiki/Musical_film" target="_blank" title="musical film-wikipedia">musical</a> comedy horror film by 20th Century Fox, produced by Lou
+    Adler
+    and Michael White and directed by Jim Sharman. The screenplay was written by Sharman and actor Richard O'Brien, who is also a member of the cast.
+
+    <p>
+      <img src="rhps.jpg" width="100%"></P>
+    <p>
+      The film is based on the 1973 musical stage production The Rocky Horror Show, with music, book, and lyrics by O'Brien.
+      The production is a parody tribute to the science fiction and horror B movies of the 1930s through to the early 1960s. Along with O'Brien, the film stars Tim Curry, Susan Sarandon, and Barry Bostwick and is narrated by Charles Gray with cast
+      members from the original Royal Court Theatre, Roxy Theatre, and Belasco Theatre productions including Nell Campbell and Patricia Quinn.
+    </p>
+</body>
+
+</html>
